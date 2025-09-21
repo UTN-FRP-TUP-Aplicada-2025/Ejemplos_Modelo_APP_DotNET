@@ -1,41 +1,40 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Ejemplo_Configuracion
+namespace Ejemplo_Configuracion;
+
+public partial class FormPrincipal : Form
 {
-    public partial class FormPrincipal : Form
+    public FormPrincipal()
     {
-        public FormPrincipal()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var configuration = new ConfigurationBuilder()
-            .SetBasePath(AppContext.BaseDirectory)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
+    private void button1_Click(object sender, EventArgs e)
+    {
+        var configuration = new ConfigurationBuilder()
+        .SetBasePath(AppContext.BaseDirectory)
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .Build();
 
-            // Lectura directa
-            string title = configuration["AppSettings:Title"];
-            bool isEnabled = bool.Parse(configuration["Feature:IsEnabled"]);
+        // Lectura directa
+        string title = configuration["AppSettings:Title"];
+        bool isEnabled = bool.Parse(configuration["Feature:IsEnabled"]);
 
-            // Registro en el contenedor
-            var r=configuration.GetSection("AppSettings");
-            var f=configuration.GetSection("Feature");
-        }
+        // Registro en el contenedor
+        var r=configuration.GetSection("AppSettings");
+        var f=configuration.GetSection("Feature");
+    }
 
-        // Usando clases tipadas (recomendado)
-        public class AppSettings
-        {
-            public string Title { get; set; }
-            public string Theme { get; set; }
-        }
+    // Usando clases tipadas (recomendado)
+    public class AppSettings
+    {
+        public string Title { get; set; }
+        public string Theme { get; set; }
+    }
 
-        public class FeatureSettings
-        {
-            public bool IsEnabled { get; set; }
-            public int MaxItems { get; set; }
-        }
+    public class FeatureSettings
+    {
+        public bool IsEnabled { get; set; }
+        public int MaxItems { get; set; }
     }
 }
