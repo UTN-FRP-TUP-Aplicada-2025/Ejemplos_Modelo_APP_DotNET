@@ -6,17 +6,22 @@ using static System.Net.Mime.MediaTypeNames;
 
 
 using var host = Host.CreateDefaultBuilder(args)
-.ConfigureAppConfiguration((context, config) =>
-{
-    // limpia proveedores previos (opcional)
-    config.Sources.Clear();
+// alternativa 1
+//.ConfigureAppConfiguration((context, config) =>
+//{
+//    // limpia proveedores previos (opcional)
+//    config.Sources.Clear();
 
-    // cargar configuración desde appsettings.json
-    config.SetBasePath(Directory.GetCurrentDirectory());
-    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-})
+//    // cargar configuración desde appsettings.json
+//    config.SetBasePath(Directory.GetCurrentDirectory());
+//    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+//})
 .ConfigureServices((context, services) =>
 {
+    // alternativa 2
+    // configuración default appsettings.json
+    IConfiguration configuration = context.Configuration;
+
     // registrar dependencias
     services.AddTransient<IUsuarioRepository, UsuarioRepository>();
     services.AddScoped<IUsuarioService, UsuarioService>();
