@@ -1,5 +1,5 @@
-using Ejemplo_Integracion;
-using Ejemplo_Integracion.Repositories;
+using WindowwsForm_Integracion;
+using WindowwsForm_Integracion.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;

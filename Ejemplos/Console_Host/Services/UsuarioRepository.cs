@@ -1,6 +1,6 @@
 ﻿
 
-namespace Ejemplo_Console_Host.Models;
+namespace Console_Host.Models;
 
 public class UsuarioRepository : IUsuarioRepository
 {

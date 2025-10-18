@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Ejemplo_Configuracion;
+namespace WindowsForm_Configuracion;
 
 public partial class FormPrincipal : Form
 {

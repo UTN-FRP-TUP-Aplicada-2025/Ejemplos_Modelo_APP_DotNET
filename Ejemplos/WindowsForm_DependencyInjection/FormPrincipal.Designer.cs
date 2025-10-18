@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Configuracion
+﻿namespace WindowwsForm_DependencyInjection
 {
     partial class FormPrincipal
     {
@@ -34,22 +34,20 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(158, 80);
+            button1.Location = new Point(172, 77);
             button1.Name = "button1";
             button1.Size = new Size(114, 45);
-            button1.TabIndex = 1;
+            button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(436, 228);
+            ClientSize = new Size(466, 205);
             Controls.Add(button1);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "FormPrincipal";
             Text = "Form1";
             ResumeLayout(false);

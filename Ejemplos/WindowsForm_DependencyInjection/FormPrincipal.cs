@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Ejemplo
+namespace WindowwsForm_DependencyInjection
 {
     public partial class FormPrincipal : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Integracion;
+﻿namespace WindowwsForm_Integracion;
 
 partial class Form1
 {

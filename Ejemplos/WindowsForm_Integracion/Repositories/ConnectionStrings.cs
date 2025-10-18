@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Integracion.Repositories;
+﻿namespace WindowwsForm_Integracion.Repositories;
 
 public class ConnectionStrings
 {

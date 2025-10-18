@@ -1,5 +1,5 @@
 ﻿
-namespace Ejemplo_Console_Host.Models;
+namespace Console_Host.Models;
 
 public interface IUsuarioRepository
 {

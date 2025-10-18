@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejemplo_Console_Host.Models;
+namespace Console_Host.Models;
 
 public class UsuarioService : IUsuarioService
 {

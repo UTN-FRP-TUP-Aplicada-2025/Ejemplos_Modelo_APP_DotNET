@@ -1,5 +1,5 @@
 
-using Ejemplo_Configuracion;
+using WindowsForm_Configuracion;
 
 ApplicationConfiguration.Initialize();
 Application.Run(new FormPrincipal());
