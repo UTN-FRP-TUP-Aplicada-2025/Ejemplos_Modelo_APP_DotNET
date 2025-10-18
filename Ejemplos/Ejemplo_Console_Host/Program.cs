@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using static System.Net.Mime.MediaTypeNames;
 
-
 using var host = Host.CreateDefaultBuilder(args)
 // alternativa 1
 //.ConfigureAppConfiguration((context, config) =>
