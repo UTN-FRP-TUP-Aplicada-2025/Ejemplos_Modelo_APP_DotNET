@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo_Configuracion", "Ej
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo_Integracion", "Ejemplo_Integracion\Ejemplo_Integracion.csproj", "{C3962D73-5043-4DDB-BE75-D877D19DF5D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo_Console_Host", "Ejemplo_Console_Host\Ejemplo_Console_Host.csproj", "{3CB2582C-C11B-4270-BB2E-75BDE48BFB94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "parte1", "parte1", "{8B72BB7C-8F27-49AF-B577-40DFE42D7FEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parte2", "Parte2", "{1F4B5F00-A985-45C3-B6C3-B480A104C40F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +38,19 @@ Global
 		{C3962D73-5043-4DDB-BE75-D877D19DF5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3962D73-5043-4DDB-BE75-D877D19DF5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3962D73-5043-4DDB-BE75-D877D19DF5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB2582C-C11B-4270-BB2E-75BDE48BFB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB2582C-C11B-4270-BB2E-75BDE48BFB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB2582C-C11B-4270-BB2E-75BDE48BFB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB2582C-C11B-4270-BB2E-75BDE48BFB94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74DCB657-4F30-4B45-8B12-08340DA8478F} = {8B72BB7C-8F27-49AF-B577-40DFE42D7FEC}
+		{9ED24EFC-56E3-4791-A487-9F7C59C7FCD2} = {8B72BB7C-8F27-49AF-B577-40DFE42D7FEC}
+		{C3962D73-5043-4DDB-BE75-D877D19DF5D3} = {8B72BB7C-8F27-49AF-B577-40DFE42D7FEC}
+		{3CB2582C-C11B-4270-BB2E-75BDE48BFB94} = {1F4B5F00-A985-45C3-B6C3-B480A104C40F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B0724DD-4A24-4B3F-9F7D-B3401C8B6E68}
